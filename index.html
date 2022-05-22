@@ -16,61 +16,94 @@
 				margin-top: 0;
 				font-size: 5vw;
 			}
-			h2{
-				font-size: 2em;
+			
+			/* HERO STYLES */
+			.full-hero{
+				background-color: #c7dbfc;
+				height: 50vh;
 			}
-			h3{
-				font-size: 1.5em;
-			}
+			
 			/* SOCIAL STYLES */
+			.social-list{
+				list-style: none;
+				text-align: right;
+				padding: 0;
+			}
+			.social-list > li{
+				display: inline-block;
+			}
 			.social-link{
 				background: rgba(150, 150, 150, 0.2);
-				color: #d08bd9;
+				color: blue;
+				height: 36px;
+				display: inline-block;
 			}
+
 			/* BIO STYLES */
 			.bio-wrapper{
+				font-size: 24px;
+				overflow: hidden;
+				margin: 0 auto 50px;
+				max-width: 960px;
+			}
+			.bio-wrapper:after{
+				visibility: hidden;
+				display: block;
+				font-size: 0;
+				content: " ";
+				clear: both;
+				height: 0;
 			}
 			.bio-box{
-				border: 10px solid #000;
-				width: 50%;
-				font-size: 1em;
-				padding: 20px;
+				border: 1px solid black;
+				box-sizing: border-box;
+				float: left;
+				font-size: 1rem;
+				margin: 40px 1% 0;
+				padding: 0 2% 2%;
+				width: 23%;
+			}
+			.bio-box img{
+				width: 100%;
+			}
+			.bio-box > a{
+				color: #c68bf9;
 			}
 			.bio-box h3{
+				color: #fff;
+				text-align: center;
+				margin: -40px 0 1em;
 				font-size: 1.5em;
 			}
 			.bio-copy{
 				font-size: 1em;
 			}
 			.bio-copy a{
-				color: rgba(0, 150, 0,0.8);
+				padding: 20px;
+				color: green;
 			}
-			/* HERO STYLES */
-			.full-hero{
-				background-color: #c7dbfc;
-				height: 50vh;
-				width: 50vw;
-			}
+
 		</style>
 	</head>
 	<body>
 		<div class="full-hero hero-home">
 			<h1>I'm an h1</h1>
-			<ul>
+			<ul class="social-list">
 				<li>
-				<a class="social-link" href="https://example.com/">Link</a>
+				<a class="social-link show" href="https://example.com/">Link1</a>
 				</li>
 				<li>
-				<a class="social-link" href="https://example.com/">Link</a>
+				<a class="social-link" href="https://example.com/">Link2</a>
 				</li>
 				<li>
-				<a class="social-link" href="https://example.com/">Link</a>
+				<a class="social-link" href="https://example.com/">Link3</a>
 				</li>
 			</ul>
 		</div>	
 		<h2>I'm an h2</h2>
 		<div class="bio-wrapper">
 			<div class="bio-box">
+				<img src="https://placekitten.com/g/400/400">
 				<h3>Michael Hartl</h3>
 				<a href="https://twitter.com/mhartl" class="social-link">here</a>
 				<div class="bio-copy">
@@ -80,6 +113,7 @@
 				</div>
 			</div>	
 			<div class="bio-box">
+				<img src="https://placekitten.com/g/400/400">
 				<h3>Lee Donahoe</h3>
 				<a href="https://twitter.com/leedonahoe" class="social-link">here</a>
 				<div class="bio-copy">
@@ -89,6 +123,7 @@
 				</div>
 			</div>
 			<div class="bio-box">
+				<img src="https://placekitten.com/g/400/400">
 				<h3>Nick Merwin</h3>
 				<a href="https://twitter.com/nickmerwin" class="social-link">here</a>
 				<div class="bio-copy">
@@ -98,11 +133,39 @@
 				</div>
 			</div>
 			<div class="bio-box">
+				<img src="https://placekitten.com/g/400/400">
 				<h3>???</h3>
 				<p>
 					The Future
 				</p>
 			</div>
 		</div>
+		<p>
+Learn Enough to Be Dangerous is a leader in the movement to teach the
+world <em>technical sophistication</em>, which includes both "hard
+skills" like coding, command lines, and version control, and "soft
+skills" like guessing keyboard shortcuts, Googling error messages, and
+knowing when to just reboot the darn thing.
+</p>
+<p>
+We believe there are <strong>at least a billion people</strong> who can
+benefit from learning technical sophistication, probably more. To join
+our movement,
+<a href="https://learnenough.com/#email_list">sign up for our official
+email list</a> now.
+</p>
+<h3>Background</h3>
+<p>
+Learn Enough to Be Dangerous is an outgrowth of the
+<a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> and the
+<a href="https://www.softcover.io/">Softcover publishing platform</a>.
+This page is part of the sample site for
+<a href="https://learnenough.com/css-tutorial"><em>Learn Enough CSS and
+Layout to Be Dangerous</em></a>, which teaches the basics of
+<strong>C</strong>ascading <strong>S</strong>tyle
+<strong>S</strong>heets, the language that allows web pages to be styled.
+Other related tutorials can be found at
+<a href="https://learnenough.com/">learnenough.com</a>.
+</p>
 	</body>
 </html>
