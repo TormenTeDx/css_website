@@ -103,6 +103,9 @@ a {
 .footer-nav a{
 	color: #ccc;
 }
+.footer .social-list{
+	padding-top: 1em;	
+}
 
 /* HERO STYLES */
 .full-hero {
@@ -129,7 +132,7 @@ a {
 }
 .social-link:hover,
 .social-link:active {
-	background-color: #0f0;
+	background-color: #ed6e2f;
 }
 .social-list {
 	list-style: none;
