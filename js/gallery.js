@@ -12,8 +12,7 @@ function activateGallery() {
 			
 			let newImageSrc = thumbnail.dataset.largeVersion;
 			mainImage.setAttribute("src", newImageSrc);
-			let newImageAlt = thumbnail.dataset.title;
-			mainImage.setAttribute("alt", newImageAlt);
+			mainImage.setAttribute("alt", thumbnail.alt);
 
 			document.querySelector(".current").classList.remove("current");
 			thumbnail.parentNode.classList.add("current");
